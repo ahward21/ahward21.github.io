@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optitrack Autism Study</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">Alex Ward</a>
+            <nav class="nav">
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="project-detail">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="../index.html#projects">Projects</a> / Optitrack Autism Study
+                </div>
+                
+                <div class="project-header">
+                    <div class="project-meta">
+                        <span class="project-category">Motion Tracking</span>
+                        <span class="project-year">2025/span>
+                    </div>
+                    <h1 class="project-title">Optitrack Autism Study</h1>
+                    <p class="project-subtitle">Developing the technical tools for a master's thesis on autism and motion analysis.</p>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <div class="main-image">
+                            <img src="../images/optitrackScreenshot.jpg" alt="Optitrack" loading="lazy">
+                        </div>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="../images/opitrackexample2.jpg" alt="Motion Analysis" loading="lazy">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../images/optirackstudy.jpg" alt="Unity results" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-description">
+                            <h2>About this project</h2>
+                            <p>This was Vanessa E. R.'s master's thesis project at the University of Twente, which aimed to see if motion tracking could help identify movement patterns related to autism. You can read about her incredible research <a href="https://www.utwente.nl/en/eemcs/interaction-lab/research-projects/vanessaproject/" target="_blank">here</a>. I was brought onto the project to handle the technical side of things. My job was to build the software that would run the experiments. I created a program in Unity that displayed the interactive tasks and, crucially, connected it to the OptiTrack motion capture system. To do this, I set up a websocket that streamed the tracking data for the participants' hands directly into Unity in real-time.</p>
+                        </div>
+
+                        <div class="project-details">
+                            <h2>Project Details</h2>
+                            <div class="details-grid">
+                                <div class="detail-item">
+                                    <h3>Technologies</h3>
+                                    <p>OptiTrack, Unity, C#, WebSockets, Python</p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Duration</h3>
+                                    <p>3 months</p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Role</h3>
+                                    <p>Unity & OptiTrack Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-challenges">
+                            <h2>My Role & Technical Hurdles</h2>
+                            <p>The main challenge was getting two very different systems—OptiTrack and Unity—to talk to each other without any lag. The research needed precise, real-time data, so any delay was unacceptable. I solved this by building a stable websocket connection to stream the raw tracking data. Within Unity, I then had to parse this data to control the application's logic. Another task was making the experiment environment feel less like a sterile lab. I helped design the Unity tasks to be more like simple games, which made the experience more comfortable and natural for the participants.</p>
+                        </div>
+
+                        <div class="project-results">
+                            <h2>Project Findings</h2>
+                            <p>Vanessa's research uncovered some amazing findings. For example, she found that some participants with autism showed such intense focus that they were completely unfazed by on-screen interruptions designed to distract them. This challenges some common ideas about attention and autism. My technical work provided the reliable data stream needed for her to analyze these subtle movements. It was rewarding to build the tool that enabled such insightful research and helped make the project a success.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-navigation">
+                    <a href="../index.html" class="btn btn-secondary">← Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Alex Ward. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

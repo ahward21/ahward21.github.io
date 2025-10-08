@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowing Reimagined - Alex Ward</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">Alex Ward</a>
+            <nav class="nav">
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="project-detail">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="../index.html#projects">Projects</a> / Rowing Reimagined
+                </div>
+                
+                <div class="project-header">
+                    <div class="project-meta">
+                        <span class="project-category">VR & Computer Vision</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h1 class="project-title">Rowing Reimagined</h1>
+                    <p class="project-subtitle">Providing technical support for a VR rowing simulation and developing a new pose-tracking system for technique analysis.</p>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <div class="main-image">
+                            <img src="../images/rowing_machines.jpg" alt="" loading="lazy">
+                        </div>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="../images/rowingexamplepic.jpg" alt="Motion Analysis" loading="lazy">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../images/rowingexcample2.png" alt="" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-description">
+                            <h2>About this project</h2>
+                            <p>Rowing Reimagined is a research project at the University of Twente's HMI lab that created an immersive VR rowing experience in the Resonite platform. The main goal was to let users practice and race together in a shared virtual world. My role was to provide technical support on two fronts: first, by keeping the project's specialized RP3 rowing machines repaired and running. Second, I developed a completely separate pose-tracking system for a master's student who needed a way to analyze rowing form without expensive sensors. This system uses computer vision to provide feedback on a rower's technique.</p>
+                        </div>
+
+                        <div class="project-details">
+                            <h2>Project Details</h2>
+                            <div class="details-grid">
+                                <div class="detail-item">
+                                    <h3>Technologies</h3>
+                                    <p>RP3 Rowing Machines, Resonite, SteamVR, Tundra Trackers, Python, Mediapipe, OpenCV</p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Duration</h3>
+                                    <p>10 months</p>
+                                </div>
+                                <div class="detail-item">
+                                    <h3>Role</h3>
+                                    <p>Technical Support & Pose Tracking Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-challenges">
+                            <h2>My Role & Technical Hurdles</h2>
+                            <p>One major challenge was finding a simple way to analyze a rower's form. For a master's student's project, I built a solution using Python, Mediapipe, and OpenCV. The system uses a standard camera to track the rower's body. I trained a pose model that could identify key body landmarks, calculate the angles of the rower's back, knees, and arms, and provide real-time feedback on their form and stage in the stroke. This provided a low-cost, effective way to gather biomechanical data. Separately, I also became the go-to person for hardware maintenance, troubleshooting and repairing the RP3 rowing machines to ensure the VR team's research wasn't delayed.</p>
+                        </div>
+
+                        <div class="project-results">
+                            <h2>Results</h2>
+                            <p>The pose-tracking system I built became a valuable tool, offering a practical and affordable method for technique analysis that previously required much more complex equipment. It successfully demonstrated how computer vision can be applied to sports science. My hardware support for the main VR project ensured the researchers had reliable equipment, allowing them to focus on their goal of creating an immersive, multi-user rowing simulation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-navigation">
+                    <a href="../index.html" class="btn btn-secondary">← Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Alex Ward. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
