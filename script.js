@@ -11,6 +11,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Handle additional project card clicks
+    const additionalProjectCards = document.querySelectorAll('.additional-project-card');
+    
+    additionalProjectCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const projectId = this.getAttribute('data-project');
+            if (projectId) {
+                // Navigate to project detail page if it exists
+                window.location.href = `projects/${projectId}.html`;
+            }
+            // For cards without data-project, you can add custom behavior
+        });
+    });
+
     // Add scroll effect to header
     window.addEventListener('scroll', function() {
         const header = document.querySelector('.header');
